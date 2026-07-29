@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureBank Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">SecureBank</div>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="transfer.html">Transfer</a>
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+        <section class="dashboard-heading">
+            <div>
+                <p>Welcome back,</p>
+                <h1>SecureBank Customer</h1>
+            </div>
+
+            <span>Account status: Active</span>
+        </section>
+
+        <section class="account-grid">
+            <article class="balance-card primary-account">
+                <p>Available Balance</p>
+                <h2>$8,450.75</h2>
+                <small>Chequing account •••• 4582</small>
+            </article>
+
+            <article class="balance-card">
+                <p>Savings Balance</p>
+                <h2>$12,300.00</h2>
+                <small>Savings account •••• 7921</small>
+            </article>
+
+            <article class="balance-card">
+                <p>Credit Available</p>
+                <h2>$3,250.00</h2>
+                <small>Credit card •••• 6045</small>
+            </article>
+        </section>
+
+        <section class="dashboard-content">
+            <article class="activity-panel">
+                <h2>Recent Transactions</h2>
+
+                <div class="transaction">
+                    <div>
+                        <strong>Payroll Deposit</strong>
+                        <p>July 26, 2026</p>
+                    </div>
+                    <span class="deposit">+$1,850.00</span>
+                </div>
+
+                <div class="transaction">
+                    <div>
+                        <strong>Hydro Payment</strong>
+                        <p>July 24, 2026</p>
+                    </div>
+                    <span class="withdrawal">−$86.40</span>
+                </div>
+
+                <div class="transaction">
+                    <div>
+                        <strong>Grocery Store</strong>
+                        <p>July 22, 2026</p>
+                    </div>
+                    <span class="withdrawal">−$74.25</span>
+                </div>
+            </article>
+
+            <aside class="quick-actions">
+                <h2>Quick Actions</h2>
+                <a href="transfer.html">Transfer Money</a>
+                <a href="#">Pay a Bill</a>
+                <a href="#">View Statements</a>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SecureBank. Educational project.</p>
+    </footer>
+</body>
+</html>

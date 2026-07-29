@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureBank Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+    <header>
+        <div class="logo">SecureBank</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main class="login-container">
+        <section class="login-card">
+            <h1>Customer Login</h1>
+            <p>Sign in to access your secure banking dashboard.</p>
+
+            <form onsubmit="window.location.href='dashboard.html'; return false;">
+                <label for="username">Username</label>
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Enter your username"
+                    required
+                >
+
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password"
+                    required
+                >
+
+                <button type="submit">Sign In</button>
+            </form>
+
+            <a class="back-link" href="index.html">Return to homepage</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SecureBank. Educational project.</p>
+    </footer>
+</body>
+</html>

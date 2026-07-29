@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureBank Money Transfer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="transfer-page">
+    <header>
+        <div class="logo">SecureBank</div>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="transfer.html">Transfer</a>
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <main class="transfer-container">
+        <section class="transfer-card">
+            <h1>Transfer Money</h1>
+            <p>Send money securely between your banking accounts.</p>
+
+            <form id="transferForm">
+                <label for="fromAccount">From account</label>
+                <select id="fromAccount" required>
+                    <option value="">Select an account</option>
+                    <option>Chequing •••• 4582 — $8,450.75</option>
+                    <option>Savings •••• 7921 — $12,300.00</option>
+                </select>
+
+                <label for="recipient">Recipient</label>
+                <input
+                    type="text"
+                    id="recipient"
+                    placeholder="Enter recipient name"
+                    required
+                >
+
+                <label for="amount">Amount</label>
+                <input
+                    type="number"
+                    id="amount"
+                    min="1"
+                    step="0.01"
+                    placeholder="Enter amount"
+                    required
+                >
+
+                <label for="message">Message</label>
+                <input
+                    type="text"
+                    id="message"
+                    placeholder="Optional message"
+                >
+
+                <button type="submit">Review Transfer</button>
+            </form>
+
+            <div id="transferResult" class="transfer-result"></div>
+
+            <a class="back-link" href="dashboard.html">Return to dashboard</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SecureBank. Educational project.</p>
+    </footer>
+
+    <script>
+        document.getElementById("transferForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const recipient = document.getElementById("recipient").value;
+            const amount = Number(document.getElementById("amount").value).toFixed(2);
+
+            document.getElementById("transferResult").textContent =
+                "Transfer of $" + amount + " to " + recipient + " is ready for review.";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,362 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+}
+
+header {
+    background: #073b6f;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 24px;
+}
+
+.hero {
+    min-height: 420px;
+    padding: 90px 8%;
+    color: white;
+    background: linear-gradient(135deg, #073b6f, #087ca7);
+}
+
+.hero h1 {
+    max-width: 650px;
+    font-size: 48px;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    max-width: 600px;
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.button {
+    display: inline-block;
+    background: #ffbf00;
+    color: #17202a;
+    padding: 13px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.services {
+    padding: 55px 8%;
+    text-align: center;
+}
+
+.services h2 {
+    color: #073b6f;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 280px;
+    padding: 28px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+.card h3 {
+    color: #087ca7;
+    margin-bottom: 12px;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+footer {
+    background: #052c53;
+    color: white;
+    padding: 20px;
+    text-align: center;
+} .login-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #e8f1f8, #d5ebf5);
+}
+
+.login-card {
+    width: 100%;
+    max-width: 430px;
+    background: white;
+    padding: 38px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.login-card h1 {
+    color: #073b6f;
+    margin-bottom: 10px;
+}
+
+.login-card p {
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.login-card label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: bold;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b8c4ce;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.login-card button {
+    width: 100%;
+    margin-top: 22px;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background: #087ca7;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-card button:hover {
+    background: #073b6f;
+}
+
+.back-link {
+    display: block;
+    margin-top: 20px;
+    color: #087ca7;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dashboard {
+    min-height: calc(100vh - 130px);
+    padding: 45px 8%;
+}
+
+.dashboard-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.dashboard-heading h1 {
+    color: #073b6f;
+    margin-top: 5px;
+}
+
+.dashboard-heading span {
+    color: #157347;
+    background: #d9f4e4;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.account-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-bottom: 30px;
+}
+
+.balance-card {
+    padding: 28px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.primary-account {
+    color: white;
+    background: linear-gradient(135deg, #073b6f, #087ca7);
+}
+
+.balance-card h2 {
+    margin: 12px 0;
+    font-size: 30px;
+}
+
+.dashboard-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 22px;
+}
+
+.activity-panel,
+.quick-actions {
+    padding: 28px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.activity-panel h2,
+.quick-actions h2 {
+    color: #073b6f;
+    margin-bottom: 20px;
+}
+
+.transaction {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.transaction p {
+    color: #687481;
+    margin-top: 5px;
+}
+
+.deposit {
+    color: #157347;
+    font-weight: bold;
+}
+
+.withdrawal {
+    color: #bb2d3b;
+    font-weight: bold;
+}
+
+.quick-actions a {
+    display: block;
+    margin-bottom: 13px;
+    padding: 13px;
+    color: #073b6f;
+    background: #e8f1f8;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    .account-grid,
+    .dashboard-content {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+.transfer-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.transfer-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 20px;
+    background: #eef4f8;
+}
+
+.transfer-card {
+    width: 100%;
+    max-width: 540px;
+    padding: 35px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.13);
+}
+
+.transfer-card h1 {
+    color: #073b6f;
+    margin-bottom: 10px;
+}
+
+.transfer-card > p {
+    margin-bottom: 24px;
+}
+
+.transfer-card label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: bold;
+}
+
+.transfer-card input,
+.transfer-card select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b8c4ce;
+    border-radius: 6px;
+    font-size: 16px;
+    background: white;
+}
+
+.transfer-card button {
+    width: 100%;
+    margin-top: 23px;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background: #087ca7;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.transfer-card button:hover {
+    background: #073b6f;
+}
+
+.transfer-result {
+    margin-top: 18px;
+    color: #157347;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+}
