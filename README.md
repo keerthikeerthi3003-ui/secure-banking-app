@@ -49,3 +49,66 @@ GET /api/status
 ```text
 GET /api/accounts
 ```
+## Project Structure
+
+```text
+secure-banking-app/
+├── architecture/
+│   └── securebank-azure-architecture.png
+├── src/
+│   ├── main/
+│   │   ├── java/com/securebank/bankingapp/
+│   │   │   ├── BankingappApplication.java
+│   │   │   └── controller/BankingController.java
+│   │   └── resources/
+│   │       ├── static/
+│   │       │   ├── index.html
+│   │       │   ├── login.html
+│   │       │   ├── dashboard.html
+│   │       │   ├── transfer.html
+│   │       │   └── style.css
+│   │       └── application.properties
+│   └── test/
+├── pom.xml
+└── README.md
+```
+
+## Screenshots
+
+Project screenshots will include:
+
+- Banking homepage
+- Customer login page
+- Account dashboard
+- Money-transfer page
+- Java REST API output
+- Azure resource configuration
+- CI/CD pipeline deployment
+- Monitoring and security validation
+
+## Future Enhancements
+
+- Connect the application to Azure SQL Database
+- Add Microsoft Entra ID authentication
+- Store secrets in Azure Key Vault
+- Add server-side transaction processing
+- Add account statements and bill payments
+- Deploy through Azure DevOps CI/CD
+- Add automated tests and security scanning
+
+## References
+
+- [Spring Boot Documentation](https://spring.io/projects/spring-boot)
+- [Microsoft Azure Documentation](https://learn.microsoft.com/azure/)
+- [Azure App Service Documentation](https://learn.microsoft.com/azure/app-service/)
+- [Azure SQL Documentation](https://learn.microsoft.com/azure/azure-sql/)
+- [GitHub Markdown Guide](https://guides.github.com/features/mastering-markdown/)
+
+## License
+
+This project is created for educational and demonstration purposes.
+
+## Contact
+
+- **Author:** Keerthi Kannan
+- **GitHub:** [keerthikeerthi3003-ui](https://github.com/keerthikeerthi3003-ui)
