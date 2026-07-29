@@ -17,7 +17,13 @@ Deploy a secure digital banking application on Azure with controlled network acc
 - Git and GitHub
 - Microsoft Azure
 - Azure DevOps
+## Application Features
 
+## Architecture
+
+The following diagram shows the secure two-tier Azure architecture designed for this application.
+
+![SecureBank Azure Architecture](architecture/securebank-azure-architecture.png)
 ## Application Features
 
 - Responsive banking homepage
@@ -31,7 +37,6 @@ Deploy a secure digital banking application on Azure with controlled network acc
 
 ## API Endpoints
 
-### Application status
 
 ### Application status
 
