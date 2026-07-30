@@ -29,3 +29,14 @@ steps:
     inputs:
       targetPath: '$(Build.ArtifactStagingDirectory)'
       artifact: 'securebank-application'
+
+  - task: Docker@2
+    displayName: Build and push SecureBank Docker image
+    inputs:
+      containerRegistry: 'acrsecurebankkeerthi'
+      repository: 'securebank-app'
+      command: 'buildAndPush'
+      Dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
+      tags: |
+        $(Build.BuildId)
+        latest
