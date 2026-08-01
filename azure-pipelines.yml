@@ -40,3 +40,19 @@ steps:
       tags: |
         $(Build.BuildId)
         latest
+  - task: AzureCLI@2
+    displayName: Deploy latest container to Azure Web App
+    inputs:
+      azureSubscription: 'sc-azure-securebank'
+      scriptType: bash
+      scriptLocation: inlineScript
+      inlineScript: |
+        az webapp config container set \
+          --resource-group rg-securebank-dev \
+          --name app-securebank-keerthi \
+          --container-image-name acrsecurebankkeerthi-axeed2ghbbfedegm.azurecr.io/securebank-app:$(Build.BuildId) \
+          --container-registry-url https://acrsecurebankkeerthi-axeed2ghbbfedegm.azurecr.io
+
+        az webapp restart \
+          --resource-group rg-securebank-dev \
+          --name app-securebank-keerthi      
